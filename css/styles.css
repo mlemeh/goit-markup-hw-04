@@ -366,11 +366,10 @@ img {
 .customers-list {
   display: flex;
   gap: 24px;
-  padding-bottom: 120px;
 }
 
 .customer-item {
-  width: calc((100%-120) / 6);
+  width: calc((100% - 120px) / 6);
   height: 88px;
 }
 
