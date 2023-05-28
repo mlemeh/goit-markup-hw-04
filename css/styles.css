@@ -97,7 +97,7 @@ img {
   color: var(--color-text);
 }
 
-/* ------ HEADER -----*/
+/* ------ header -----*/
 
 .header {
   border-bottom: 1px solid #e7e9fc;
@@ -177,8 +177,6 @@ img {
   color: #404bbf;
 }
 
-/* ----- HERO -----*/
-
 /* ----- hero -----*/
 .hero {
   margin: auto auto;
@@ -194,9 +192,6 @@ img {
     url(../images/people-office.jpg);
   background-repeat: no-repeat;
   background-position: center;
-}
-
-.hero-container {
 }
 
 .hero-title {
@@ -236,11 +231,10 @@ img {
   background-color: var(--color-pressed-state);
 }
 
-/* ----- feature ----- */
+/* ----- section 1 - feature ----- */
 .feature {
   margin: 0 auto;
   padding: 120px 0;
-  /*  outline: 2px solid green; */
 }
 
 .feature-list {
@@ -261,37 +255,15 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* padding: 24px 100px; */
 }
-
-/* .feature-icon {
-  width: 100%;
-  height: 100%;
-} */
 
 .feature-item-title {
   margin-bottom: 8px;
 }
 
-/* .feature-item-title {
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
-  letter-spacing: 0.02em;
-  color: var(--color-dark);
-}
-
-.feature-item-text {
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  color: var(--color-text);
-}*/
-
-/* ----- doing ----- */
+/* ----- section 2 - What are we doing ----- */
 
 .doing {
-  /*  padding-top: 120px; */
   padding-bottom: 120px;
 }
 
@@ -310,7 +282,7 @@ img {
   width: calc((100% - 48px) / 3);
 }
 
-/* ----- team -----*/
+/* ----- section 3 - Our Team -----*/
 .team {
   padding: 120px 0px;
   background-color: var(--color-light);
@@ -331,6 +303,8 @@ img {
   width: calc((100% - 72px) / 4);
   border-radius: 0px 0px 4px 4px;
   background-color: #ffffff;
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .team-item-desc {
@@ -369,26 +343,10 @@ img {
 }
 
 .team-soc-icon {
-  /* width: 16px;
-  height: 16px; */
   fill: var(--color-white);
 }
 
-/*.team-item-title {
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
-  letter-spacing: 0.02em;
-  color: var(--color-dark);
-}
-.team-item-text {
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  color: var(--color-text);
-}*/
-
-/* ----- customers -----*/
+/* ----- section 4 - customers -----*/
 .customers {
   padding-top: 120px;
 }
@@ -420,12 +378,10 @@ img {
 }
 
 .customer-icon {
-  /* width: 104px;
-  height: 56px; */
   fill: currentColor;
 }
 
-/* ----- FOOTER -----*/
+/* ----- footer -----*/
 .footer {
   background-color: var(--color-dark);
   padding-top: 100px;
@@ -496,13 +452,10 @@ img {
 }
 
 .footer-soc-icon {
-  /* width: 16px;
-  height: 16px; */
   fill: var(--color-white);
 }
 
 /* -----  portfolio link -----*/
-
 .portfolio {
   padding: 96px 0 120px;
 }
