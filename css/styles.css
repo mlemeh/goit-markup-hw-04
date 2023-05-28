@@ -101,6 +101,8 @@ img {
 
 .header {
   border-bottom: 1px solid #e7e9fc;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .header-container {
@@ -182,16 +184,16 @@ img {
   margin: auto auto;
   padding-top: 188px;
   padding-bottom: 188px;
-  width: 1440px;
+  max-width: 1440px;
   background: var(--color-hero-bc);
   background-image: linear-gradient(
-      to right,
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
     url(../images/people-office.jpg);
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
 }
 
 .hero-title {
@@ -343,12 +345,18 @@ img {
 }
 
 .team-soc-icon {
-  fill: var(--color-white);
+  fill: #f4f4fd;
+}
+
+.team-soc-link:hover,
+.team-soc-link:focus {
+  background-color: #404bbf;
 }
 
 /* ----- section 4 - customers -----*/
 .customers {
   padding-top: 120px;
+  padding-bottom: 120px;
 }
 
 .customers-title {
@@ -374,7 +382,13 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #999999;
+  color: var(--color-subtle-text);
+}
+
+.customer-link:hover,
+.customer-link:focus {
+  border-color: #404bbf;
+  color: #404bbf;
 }
 
 .customer-icon {
@@ -388,10 +402,13 @@ img {
   padding-bottom: 100px;
 }
 
-.footer-list {
+.footer-container {
   display: flex;
-  justify-content: left;
-  gap: 120px;
+  align-items: baseline;
+}
+
+.footer-logo-text {
+  margin-right: 120px;
 }
 
 .footer-logo {
@@ -432,7 +449,7 @@ img {
 
 .footer-soc-list {
   display: flex;
-  justify-content: left;
+  /* justify-content: left; */
   gap: 16px;
 }
 
@@ -449,6 +466,11 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.footer-soc-link:hover,
+.footer-soc-link:focus {
+  background-color: #31d0aa;
 }
 
 .footer-soc-icon {
@@ -503,8 +525,12 @@ img {
   margin-bottom: 48px;
 }
 
-.job-item:hover,
-.job-item:focus {
+.job-link {
+  display: block;
+}
+
+.job-link:hover,
+.job-link:focus {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
